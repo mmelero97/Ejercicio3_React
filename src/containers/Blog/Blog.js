@@ -97,28 +97,28 @@ class Blog extends React.Component {
         return (
             <div>
                 <section className="Posts">
-                    <div class="row" className="Caja1">
-                        <div class="col">
+                    <Row className="Caja1">
+                        <Col>
                             <h2>Novedades literarias</h2>
-                        </div>
-                    </div>
-                    <div class="row">
+                        </Col>
+                    </Row>
+                    <Row>
                         {posts}
-                    </div>
+                    </Row>
                 </section>
 
                 <section>
                     <FullPost id={this.state.selectedPostId} />
                 </section>
                 <section className="Comentarios">
-                    <div class="row" className="Caja2">
+                    <Row className="Caja2">
                         <div class="col">
                             <h5>Comentarios de otros usuarios</h5>
                         </div>
-                    </div>
-                    <div class="row">
+                    </Row>
+                    <Row>
                         {comentarios}
-                    </div>
+                    </Row>
                 </section>
                 <section>
                     <NewPost />

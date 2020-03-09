@@ -4,8 +4,8 @@ import './Comentario.css';
 import { Row, Col } from 'react-bootstrap';
 
 const post = (props) => (
-    <div class="row py-3" className="Comentario">
-        <div class="col">
+    <div class="row" className="Comentario">
+        <Col>
             <article  onClick={props.clicked}>
                 <div>{props.body}</div>
                 <div className="Info">
@@ -15,7 +15,7 @@ const post = (props) => (
                     </div>
                 </div>
             </article>
-        </div>
+        </Col>
     </div>
 
 );
